@@ -13,6 +13,6 @@ int main() {
         IntegerArray b = a;
     }
 
-    cout << a.getData(0) << endl;
+    a.print();
     return 0;
 }
