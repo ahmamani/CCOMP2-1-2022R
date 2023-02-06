@@ -23,4 +23,3 @@ std::ostream& operator<<(std::ostream& output, Point &o){
     output<<"("<<o.x<<","<<o.y<<")";
     return output;
 }
-

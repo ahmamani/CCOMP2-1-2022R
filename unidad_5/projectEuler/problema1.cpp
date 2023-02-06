@@ -13,7 +13,7 @@ int multiplos(int a){
 	return suma;
 }	
 int main(){
-	cout<<multiplos(1000);
+	std::cout<<multiplos(1000);
 	return 0;
 }
 

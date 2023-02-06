@@ -35,9 +35,17 @@ int PointArray::getSize() const {
     return size;
 }
 
-void PointArray::print() const {
+/*void PointArray::print() const {
     std::cout << "[ ";
     for(int i = 0; i < size; i++)
         data[i].print();
     std::cout << " ]" << std::endl;
+}*/
+
+std::ostream& operator<<(std::ostream& output, const PointArray &o){    
+    output << "[ ";
+    for(int i = 0; i < o.size; i++)
+        output << o.data[i] << " ";
+    output << " ]";    
+    return output;
 }

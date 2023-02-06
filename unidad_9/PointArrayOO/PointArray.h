@@ -9,6 +9,7 @@ class PointArray {
         int size;
 
     public:
+        friend std::ostream& operator<<(std::ostream& output, const PointArray &o);
         PointArray(int size);
         PointArray(const PointArray &o);
         ~PointArray();
